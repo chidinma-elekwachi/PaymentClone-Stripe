@@ -1,0 +1,18 @@
+body{
+  font-family: 'Whitney SSm A','Whitney SSm B',Helvetica,Arial;
+  background-color: #f6f9fc;
+  /* This is the background color and font of stripe website */
+}
+.App {
+  text-align: center;
+  font-family: 'Whitney SSm A','Whitney SSm B',Helvetica,Arial;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}

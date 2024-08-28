@@ -1,0 +1,77 @@
+.head {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+  }
+  .head h1{
+    position: relative;
+    left: 20px;
+    bottom: 8px;
+  }
+  .head nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: 550;
+    text-decoration: none;
+  }
+  #logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+  }
+  .nav_buttons{
+    display: flex;
+    font-weight: 550;
+    gap: 20px;
+  }
+  
+  .head nav a:hover {
+    color: #f5f5f5;
+  }
+  #urBtn{
+    border-radius: 18px;
+    background-color: white;
+    border: none;
+    width: 80px;
+    position: relative;
+    bottom: 5px;
+  }
+  .signup_head{
+    font-weight: 550;
+    color: rgb(163, 27, 95);
+    opacity: 0.8;
+  }
+
+
+  /* Drop down content for the nav links */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 300%;
+  background-color: whitesmoke;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 10px;
+  border-radius: 5px;
+}
+.dropdown-content p{
+  text-align: center;
+  color: #425466;
+  padding: 10px 15px;
+}
+nav{
+    position: relative;
+    right: 70px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

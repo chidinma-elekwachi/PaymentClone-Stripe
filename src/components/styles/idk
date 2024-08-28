@@ -1,0 +1,29 @@
+/* Media query for laptops */
+@media screen and (max-width: 991px){
+    .diagonal-image {
+        position: absolute;
+        top: -45%;
+        left: -10%;
+        width: 110vw;
+        height: 600;
+        transform: rotate(168deg); /* Rotate the image to make it diagonal */
+        transform-origin: center;
+        opacity: 0.7; /* Adjust the opacity as needed */
+        pointer-events: none;
+        z-index: -1;
+      }
+    
+}
+
+/* Media query for tabs*/
+@media screen and (max-width: 768px){
+    
+}
+
+/* Media query for phones */
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 360px){
+    
+}

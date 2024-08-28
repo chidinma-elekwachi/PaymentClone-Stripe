@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Effect</title>
+    <style>
+        /* Style the buttons */
+.hover-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #008CBA; /* Blue background */
+    color: white;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Create a pseudo-element to handle the arrow */
+.hover-button::after {
+    content: '>';
+    margin-left: 8px; /* Adjust spacing */
+    transition: content 0.3s;
+}
+
+/* Change background color on hover */
+.hover-button:hover {
+    background-color: #005f73; /* Darker blue background */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Change the pseudo-element content on hover */
+.hover-button:hover::after {
+    content: '→';
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover using css
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+    </style>
+</head>
+<body>
+    <button class="hover-button">Sign Up </button>
+    <button class="hover-button">Learn More </button>
+    <button class="hover-button">Contact Us </button>
+
+
+    <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    </div>
+    <script>
+        // JavaScript to handle hover effect
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        
+        dropdown.addEventListener('mouseenter', () => {
+            dropdownContent.style.display = 'block';
+        });
+        dropdown.addEventListener('click', () =>{
+            dropdownContent.style.display = 'block';
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+            dropdownContent.style.display = 'none';
+        });
+        </script>
+</body>
+</html>
